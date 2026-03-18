@@ -1,0 +1,44 @@
+[project]
+name = "nykaa-bot"
+version = "0.1.0"
+description = "Ecommerce agent using Agent Development Kit"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "google-cloud-aiplatform[adk,agent_engine]>=1.93.0",
+    "google-adk>=1.0.0",
+    "saf3ai-sdk==0.2.36",
+    "pydantic-settings>=2.8.1",
+    "gunicorn>=21.2.0",
+]
+
+[tool.agent-starter-pack.settings]
+agent_directory = "agent"
+
+# Configure Poetry in dependency-only (no package) mode,
+# so `poetry install` works without requiring a Python package layout.
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+# Ensure Poetry resolves Saf3AI SDK from TestPyPI.
+saf3ai-sdk = { version = "0.2.36", source = "testpypi" }
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+priority = "explicit"
+
+[build-system]
+requires = ["uv_build>=0.8.14,<0.9.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+explicit = true
+
+[tool.uv.sources]
+saf3ai-sdk = { index = "testpypi" }
+

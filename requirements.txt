@@ -1,0 +1,16 @@
+google-cloud-aiplatform>=1.93.0
+google-adk>=1.0.0
+fastapi==0.115.5
+uvicorn[standard]>=0.34.0
+deprecated>=1.2.0
+jinja2>=3.1.0
+
+# Cloud Run production server
+gunicorn>=21.2.0
+
+# Config validation
+pydantic-settings>=2.8.1
+
+# Saf3AI SDK (hosted on TestPyPI)
+--extra-index-url https://test.pypi.org/simple/
+saf3ai-sdk==0.2.36

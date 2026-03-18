@@ -1,0 +1,11 @@
+services:
+  ecommerce-agent:
+    build:
+      context: .
+    ports:
+      - "8011:8011"
+      - "5000:5000"
+    # Compose will load variables from a local `.env` in this folder
+    # and pass them into the container.
+    env_file:
+      - .env

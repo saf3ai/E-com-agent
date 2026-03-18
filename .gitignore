@@ -1,0 +1,15 @@
+# Local virtualenvs
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local data
+data/orders.json
+
+# Secrets (never commit)
+agent/.env
+.env
+

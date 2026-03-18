@@ -1,0 +1,118 @@
+[
+  {
+    "id": "101",
+    "name": "Nykaa Matte Lipstick",
+    "price": 799,
+    "category": "makeup",
+    "tags": ["lipstick", "matte", "long-wear", "bestseller", "everyday"],
+    "shade": "Crimson Crush"
+  },
+  {
+    "id": "102",
+    "name": "Nykaa Ultra Matte Liquid Lipstick",
+    "price": 699,
+    "category": "makeup",
+    "tags": ["lipstick", "liquid", "transfer-proof", "office", "date-night"],
+    "shade": "Rose Nude"
+  },
+  {
+    "id": "103",
+    "name": "Nykaa So Creme! Creamy Matte Lipstick",
+    "price": 399,
+    "category": "makeup",
+    "tags": ["lipstick", "creamy", "budget", "everyday"],
+    "shade": "Wakeup Makeup"
+  },
+  {
+    "id": "201",
+    "name": "Nykaa SkinShield Foundation",
+    "price": 899,
+    "category": "face",
+    "tags": ["foundation", "oily skin", "long-wear", "matte", "full coverage"],
+    "finish": "matte"
+  },
+  {
+    "id": "202",
+    "name": "Nykaa Dewy Skin Foundation",
+    "price": 999,
+    "category": "face",
+    "tags": ["foundation", "dry skin", "dewy finish", "glowy", "medium coverage"],
+    "finish": "dewy"
+  },
+  {
+    "id": "203",
+    "name": "Nykaa Skin Genius BB Cream",
+    "price": 449,
+    "category": "face",
+    "tags": ["bb cream", "light coverage", "everyday", "quick"],
+    "finish": "natural"
+  },
+  {
+    "id": "301",
+    "name": "Nykaa Everyday Essentials Skincare Kit",
+    "price": 1499,
+    "category": "skincare",
+    "tags": ["skincare", "routine", "oily skin", "starter kit"]
+  },
+  {
+    "id": "302",
+    "name": "Nykaa Hydrate & Glow Skincare Kit",
+    "price": 1699,
+    "category": "skincare",
+    "tags": ["skincare", "dry skin", "hydrating", "glow", "kit"]
+  },
+  {
+    "id": "401",
+    "name": "Nykaa Love Struck Perfume - Vanilla Vibes",
+    "price": 1299,
+    "category": "fragrance",
+    "tags": ["perfume", "vanilla", "warm", "sweet", "date-night", "bestseller"],
+    "notes": ["vanilla", "tonka", "amber"]
+  },
+  {
+    "id": "402",
+    "name": "Nykaa Perfume - French Vanilla & Caramel",
+    "price": 1399,
+    "category": "fragrance",
+    "tags": ["perfume", "vanilla", "gourmand", "sweet", "cozy"],
+    "notes": ["vanilla", "caramel", "musk"]
+  },
+  {
+    "id": "403",
+    "name": "Nykaa Body Mist - Warm Vanilla Sugar",
+    "price": 599,
+    "category": "fragrance",
+    "tags": ["body mist", "vanilla", "budget", "everyday", "sweet"],
+    "notes": ["vanilla", "sugar", "coconut"]
+  },
+  {
+    "id": "404",
+    "name": "Nykaa Perfume - Vanilla Oud Luxe",
+    "price": 1999,
+    "category": "fragrance",
+    "tags": ["perfume", "vanilla", "oud", "evening", "luxury"],
+    "notes": ["vanilla", "oud", "saffron"]
+  },
+  {
+    "id": "501",
+    "name": "Nykaa Curl Power Mascara",
+    "price": 549,
+    "category": "eyes",
+    "tags": ["mascara", "curling", "lengthening", "bestseller"]
+  },
+  {
+    "id": "502",
+    "name": "Nykaa Everyday Nude Eyeshadow Palette",
+    "price": 1199,
+    "category": "eyes",
+    "tags": ["eyeshadow", "nude", "everyday", "office"],
+    "finish": "matte + shimmer"
+  },
+  {
+    "id": "601",
+    "name": "Nykaa Nail Enamel - Classic Nude",
+    "price": 249,
+    "category": "nails",
+    "tags": ["nail polish", "nude", "everyday", "office"]
+  }
+]
