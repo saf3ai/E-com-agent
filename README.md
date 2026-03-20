@@ -59,10 +59,15 @@ docker compose up -d --build
 
 ### 3. Accessing the Services
 
-The startup script handles both services simultaneously:
+Docker handles the Interactive Chat UI, but the API Server must be started manually.
 
-- 🎨 **Interactive Chat UI**: Access your secure AI via `http://localhost:8011`
-- ⚙️ **REST API Interface**: Health checks available at `http://localhost:5000/healthz`
+- 🎨 **Interactive Chat UI**: The ADK Web UI automatically starts at `http://localhost:8011` via Docker.
+
+**To run the REST API Server locally**, execute the following command in your terminal:
+```bash
+uvicorn api.server:app --port 5000
+```
+- ⚙️ **REST API Interface**: Once started locally, health checks are available at `http://localhost:5000/healthz`
 
 ---
 

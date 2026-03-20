@@ -2,6 +2,8 @@ FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    HOST=0.0.0.0 \
     PORT=8011
 
 WORKDIR /app
@@ -14,12 +16,11 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY . /app
 
-# Expose ports for both the UI and the API Server
+# Expose port for the UI
 EXPOSE 8011
-EXPOSE 5000
 
-COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
+# Setup isolated agent directory
+RUN mkdir -p /tmp/adk_apps && ln -sf /app/agent /tmp/adk_apps/e-commerce-agent
 
-# Run both the web UI and the API server using the startup script
-CMD ["/app/start.sh"]
+# Run only the ADK web UI
+CMD ["adk", "web", "/tmp/adk_apps", "--port", "8011", "--host", "0.0.0.0"]
